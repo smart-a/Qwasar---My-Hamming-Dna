@@ -2,14 +2,18 @@ def my_hamming(dna_1,dna_2)
     str1=dna_1.split("")
     str2=dna_2.split("")
     hamming_count=0
- str1.each_index do |idx|
-        hamming_count += 1 if
-        str1.values_at(idx) != str2.values_at(idx)
-  end
+    if(str1.length == str2.length)
+        str1.each_index do |idx|
+                hamming_count += 1 if
+                str1.values_at(idx) != str2.values_at(idx)
+        end
+    else
+        hamming_count = -1
+    end
 
     return hamming_count
 
 
 end
 
-puts my_hamming("","")
+#puts my_hamming("ACCAGGG","ACTATGG")

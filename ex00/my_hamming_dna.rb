@@ -1,4 +1,4 @@
-def my_hamming(dna_1,dna_2)
+def my_hamming_dna(dna_1,dna_2)
     str1=dna_1.split("")
     str2=dna_2.split("")
     hamming_count=0
@@ -16,4 +16,4 @@ def my_hamming(dna_1,dna_2)
 
 end
 
-#puts my_hamming("ACCAGGG","ACTATGG")
+#puts my_hamming_dna("ACCAGGG","ACTATGG")
